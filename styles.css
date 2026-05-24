@@ -268,3 +268,58 @@ body {
   color: var(--secondary-text-color);
 }
 
+/* Hover effects */
+
+.contact-info__item:hover {
+  color: var(--text-decoration-color);
+}
+
+.contact-info__item:hover .contact-info__item-icon path {
+  fill: var(--text-decoration-color);
+}
+
+/* Smooth transitions */
+
+.contact-info__item {
+  transition: color 0.3s ease;
+}
+
+.contact-info__avatar {
+  transition: transform 0.3s ease;
+}
+
+.contact-info__avatar:hover {
+  transform: scale(1.05);
+}
+
+/* Fade-in animation for the whole resume */
+
+.resume {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Highlight on skills text */
+
+.skills__text {
+  background-color: #fff8ee;
+  padding: 10px 15px;
+  border-left: 3px solid var(--text-decoration-color);
+  border-radius: 4px;
+}
+
+/* Hover effect on experience list items */
+
+.experiences__company-project-responsibilities li {
+  transition: padding-left 0.2s ease;
+  cursor: default;
+}
+
+.experiences__company-project-responsibilities li:hover {
+  padding-left: 8px;
+  color: var(--text-decoration-color);
+}
